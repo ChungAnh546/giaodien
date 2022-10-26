@@ -26,7 +26,7 @@
 .chatMenu {
   flex: 3.5;
   border-right: 1px groove mistyrose;
-  background-color: white;
+  background-color: var(--WA100);
 }
 .spacemenuleft{
   width: 100%;
@@ -39,6 +39,69 @@
    -webkit-filter: brightness(0) invert(1);
    margin-top: 10px;
 
+}
+.divimg2{
+
+  text-align: center;
+  width: 100%;
+  height: 55px;
+
+  
+}
+.divimg2:hover{
+  background-color: gray;
+}
+.divimg2 ul {
+  background: #ffffff;
+  width: 250px;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(186, 186, 186);
+}
+.divimg2 li {
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #282828;
+  padding: 0 1em;
+  
+  
+}
+
+.divimg2 a {
+  text-decoration: none;
+  color: #0C0A0A;
+  
+  display: block;
+  
+  
+}
+.divimg2 a:hover {
+  
+  color: blue;
+  
+}
+.divimg2 li:hover{
+  background-color: rgb(245, 243, 243);
+}
+.divimg2 ul li {
+  position: relative;
+ }
+
+.divimg2 .sub-menu{
+  position: absolute;
+  left: 54px;
+  top: 620px;
+  display: none;
+}
+.divimg2 li {
+  position: relative;
+}
+.divimg2:hover .sub-menu {
+  display: flex;
+  flex-direction: column;
 }
 .divimg{
 
@@ -198,6 +261,7 @@
   padding-right: 0px;
   padding-left: 0%;
   flex-direction: column;
+  border-top: 0.1px groove rgb(253, 253, 253);
 }
 .conversation{
  width: 100%;
@@ -232,6 +296,70 @@
   font-size: 50px;
   color: rgb(224, 220, 220);
   cursor: default;
+}
+
+.topbarLeft ul {
+  background: #ffffff;
+  width: 250px;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+  box-shadow: 2px 2px 2px 2px rgb(186, 186, 186);
+  border-radius: 10px;
+}
+.topbarLeft li {
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #282828;
+  padding: 0 1em;
+  
+  
+}
+
+.topbarLeft a {
+  text-decoration: none;
+  color: #0C0A0A;
+  
+  display: block;
+  
+  
+}
+.topbarLeft a:hover {
+  
+  color: blue;
+  
+}
+.topbarLeft li:hover{
+  background-color: rgb(245, 243, 243);
+}
+.topbarLeft ul li {
+  position: relative;
+ }
+.sub-menu {
+  display: none;
+  position: absolute;
+}
+.topbarLeft .sub-menu{
+  position: absolute;
+  left: 54px;
+  top: 20px;
+  display: none;
+}
+.topbarLeft li {
+  position: relative;
+}
+.topbarLeft:hover .sub-menu {
+  display: flex;
+  flex-direction: column;
+}
+.sub-menu li {
+  margin-left: 0 !important;
+}
+
+/*==Menu cấp 3==*/
+.sub-menu > ul {
+  display: none !important;
 }
 
 @media screen and (max-width: 768px) {

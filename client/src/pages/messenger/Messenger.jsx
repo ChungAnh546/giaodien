@@ -36,6 +36,13 @@ export default function Messenger() {
             className="topbarImg"
           />
           </Link>
+          <ul class="sub-menu">
+           
+           <li><a href="#">your profile</a></li>
+           <li><a href="#">Setting</a></li>
+           <li><a href="#">log out</a>
+           </li>
+          </ul>
         
           </div>
             <div className="divimg"><img src="https://cdn-icons-png.flaticon.com/512/919/919904.png" alt="" className="iconleftmenu"/></div>
@@ -44,7 +51,15 @@ export default function Messenger() {
             <div className="divimg"><img src="https://img.icons8.com/ios/452/video-call.png" alt="" className="iconleftmenu"/></div>
             <div className="spacemenuleft"></div>
             <div className="divimg"><img src="https://img.icons8.com/ios/452/business.png" alt="" className="iconleftmenu"/></div>
-            <div className="divimg"><img src="https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/452/external-setting-essential-element-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png" alt="" className="iconleftmenu"/></div>
+            <div className="divimg2"><img src="https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/452/external-setting-essential-element-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png" alt="" className="iconleftmenu"/>
+            <ul class="sub-menu">
+           
+            <li><a href="#">your profile</a></li>
+            <li><a href="#">Setting</a></li>
+            <li><a href="#">log out</a>
+            </li>
+            </ul>
+            </div>
             
           </div>
         </div>
