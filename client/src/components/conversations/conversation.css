@@ -1,42 +1,71 @@
 .conversation {
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 10px;
+  height: 65px;
+  width: 100%;
   cursor: pointer;
  
 }
-
+.conversationtb {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  cursor: pointer;
+ 
+}
 .conversation:hover {
   background-color: rgb(245, 243, 243);
 }
 .mess{
   display: flex;
   flex-direction: column;
-  
+  width: 75%;
+  height: 100%;
   padding: 0px;
   margin: 0px;
+  justify-content: center;
+}
+.messtb{
+  display: flex;
+  flex-direction: column;
+  width: 87%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  justify-content: center;
 }
 .status{
   font-size: 12px;
+  height: 20px;
+  text-align: left;
+  font-size: 15px;
 }
 .converMess{
-  margin-left: 10px;
-  font-size: 12px;
+  text-align: left;
+  font-size: 15px;
+  color: rgb(143, 143, 143);
+  height: 20px;
+}
+.spaceCon{
+  height: 10px;
 }
 .conversationImg {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   object-fit: cover;
   
 }
 
 .conversationName {
-  margin-left: 10px;
-  font-weight: 600;
-  
+  text-align: left;
+  font-weight: 300;
+  font-size: 20px;
   padding: 0px;
-  
+  height: 25px;
 }
 
 @media screen and (max-width: 768px) {

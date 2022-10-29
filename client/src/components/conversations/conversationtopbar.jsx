@@ -7,7 +7,7 @@ export default function Conversation() {
 
   
   return (
-    <div className="conversation">
+    <div className="conversationtb">
       <img
         className="conversationImg"
         src={
@@ -16,8 +16,9 @@ export default function Conversation() {
         }
         alt=""
       />
-      <div className="mess">
+      <div className="messtb">
         <span className="conversationName">Chung</span>
+        
         <span className="status">Online</span>
       </div>
       

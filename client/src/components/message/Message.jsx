@@ -8,7 +8,7 @@ export default function Message() {
       
         <img
           className="messageImg2"
-          src="https://images.pexels.com/photos/3686769/pexels-photo-3686769.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+          src="https://icdn.24h.com.vn/upload/1-2022/images/2022-01-06/271315454_504958790867873_8361631472902378352_n-1641435493-158-width1080height1349.jpg"
           alt=""
         />
        <p className="messageText">Hello</p>

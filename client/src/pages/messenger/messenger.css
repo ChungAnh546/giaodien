@@ -1,30 +1,53 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Times New Roman', Times, serif;
+}
 .messenger {
-  height: calc(100vh - 70px);
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.spaceTopBar{
+  width: 10px;
+}
+.topbarright{
+  display: flex;
+  width: 20%;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
 }
 .topbarchat{
   width: 100%;
-  height: 60px;
+  height: 9%;
   background-color: white;
   display: flex;
   border-bottom: 1px groove gray ;
   align-items: center;
+  display: flex;
   
 }
 .iconcall{
-  width: 20px;
+  width: 25px;
   height: 25px;
-  padding: 5px;
-  padding-top: 2.5px;
-  padding-bottom: 2.5px;
+  padding: 7px;
+  object-fit: cover;
+  cursor: pointer;
   border-radius: 2px;
 }
 .iconcall:hover{
-  background-color: gray;
+  background-color: whitesmoke;
 }
 .chatMenu {
-  flex: 3.5;
+  height: 100%;
+  width: 24%;
+  display: flex;
+  flex-direction: column;
   border-right: 1px groove mistyrose;
   background-color: var(--WA100);
 }
@@ -35,10 +58,18 @@
 .iconleftmenu{
   width: 35px;
   height: 35px;
+  object-fit: cover;
+  cursor: pointer;
   filter: brightness(0) invert(1);
    -webkit-filter: brightness(0) invert(1);
    margin-top: 10px;
 
+}
+.divProfile{
+  width: 100%;
+  height:31%;
+  text-align: center;
+  
 }
 .divimg2{
 
@@ -93,7 +124,7 @@
 .divimg2 .sub-menu{
   position: absolute;
   left: 54px;
-  top: 620px;
+  top:550px;
   display: none;
 }
 .divimg2 li {
@@ -111,124 +142,190 @@
 
   
 }
+
 .divimg:hover{
   background-color: gray;
 }
+.topMenu{
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+ 
+  align-items: center;
+}
 .searchbar2 {
   width: 70%;
-  height: 30px;
+  height: 35px;
 
   background-color: whitesmoke;
   border-radius: 3px;
   display: flex;
+  
   align-items: center;
   border-bottom: 1px solid gray;
 }
 .iconuser{
   width: 20px;
   height: 20px;
-  padding: 5px;
-  margin-left: 20px ;
-  border-radius: 2px;
+  padding: 10px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 2px ;
   
 }
 .iconsmile{
+  margin-left: 15px;
   width: 30px;
   height: 30px;
   padding: 5px;
-  margin-top: 5px;
-  margin-left: 10px;
+ 
   border-radius: 2px;
-  
+  object-fit: cover;
+  cursor: pointer;
+}
+.iconsmile:hover{
+  background-color: whitesmoke;
 }
 .icongroup{
   width: 20px;
   height: 20px;
-  padding: 5px;
- 
+  padding: 10px;
+  object-fit: cover;
+  cursor: pointer;
   border-radius: 2px;
   
 }
 .icongroup:hover{
-  background-color: gray;
+  background-color: whitesmoke;
 }
-.topbarIconItem {
-  margin-right: 15px;
-  cursor: pointer;
-  position: relative;
-}
+
 .iconuser:hover{
-  background-color: gray;
+  background-color: whitesmoke;
 }
-.topbarImg {
-  width: 40px;
-  height: 40px;
+.barImg {
+  width: 50px;
+  height: 50px;
+  margin-top: 40% ;
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
-  margin-left: 7px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  
+  
 }
 
 .chatMenuInput {
   width: 100%;
   border: none;
-  height: 90%;
+  height: 100%;
+  font-size: 17px;
   background-color: whitesmoke;
 }
+.chatMenuInput:focus{
+  outline: none;
+}
 .searchIcon {
-  font-size: 20px !important;
+  font-size: 25px !important;
   margin-left: 10px;
 }
 
 .chatBox {
-  flex: 10;
+  height: 100%;
+  width: 72%;
   background-color: darkgray;
  
+  display: flex;
+  flex-direction: column;
 }
 
 .chatBoxWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  
   position: relative;
-  display: flex;
+  
   align-items: center;
+
+  height: 91%;
 }
 
 .chatBoxTop {
-  height: 75%;
-  overflow-y: hidden;
-  padding-right: 10px;
+  height: 83%;
+  overflow-y: scroll;
+  
   width: 100%;
 }
 .menuNhom{
   display: flex;
   margin-top: 0px;
-
+  align-items: center;
+  width: 100%;
+  height: 5%;
+  border-bottom: 1px groove rgb(252, 252, 252);
 }
 .nhom{
-  margin: 10px;
-  margin-left: 30px;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  object-fit: cover;
+  cursor: pointer;
+}
+.nhom a{
+  text-decoration: none;
+  padding-top: 6px;
+  display: block;
+  width: 100%;
+  height: 78%;
+}
+.all a{
+  text-decoration: none;
+  padding-top: 6px;
+  display: block;
+  width: 100%;
+  height: 78%;
+}
+.all{
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  object-fit: cover;
+  cursor: pointer;
 }
 .nhom :hover{
   color: blue;
-  border-bottom: 1px;
+  border-bottom: 2px groove blue;
+}
+.all :hover{
+  color: blue;
+  border-bottom: 2px groove blue;
 }
 .inputmess{
-  border-radius: 10px;
+  
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
   background-color: white;
-  width: 90%;
+  border-top: 1px groove rgb(249, 249, 249);
+  width: 100%;
+  height: 55%;
 }
-.chatBoxBottom {
- margin-bottom: 80px;
+.topBarBox{
+  width: 100%;
+  height: 45%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+}
+.chatBoxBottom {
+ 
+  height: 17%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
   width: 100%;
+  background-color: white;
+  
 }
 
 .chatMessageInput {
@@ -236,8 +333,11 @@
   height: 100%;
   border: 0px;
   border: none;
+  font-size: 20px;
 }
-
+.chatMessageInput:focus{
+  outline: none;
+}
 .chatSubmitButton {
   width: 70px;
   height: 40px;
@@ -248,21 +348,25 @@
   color: white;
 }
 .chatOnline{
-  flex: 0.5;
+  height: 100%;
+  width: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  text-align: center;
   background-color: #1877f2;
  }
  .chatMenuWrapper{
   display: flex;
- }
-.chatMenuWrapper{
-  padding: 10px;
-  height: 100%;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-left: 0%;
+  overflow-y: scroll;
+  
   flex-direction: column;
-  border-top: 0.1px groove rgb(253, 253, 253);
-}
+  width: 100%;
+  height: 85%;
+ }
+
 .conversation{
  width: 100%;
  height:40px;
@@ -271,25 +375,15 @@
  text-align: center;
 }
 .chatMenuWrapper2{
-  margin-top: 7px;
-  display: flex;
-  padding: 10px;
-  padding-bottom: 0px;
-  padding-right: 0px;
-  
-}
-.chatBoxWrapper{
-  padding: 10px;
-  height: 100%;
-}
-.chatOnlineWrapper {
-  padding-right: 0px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
   width: 100%;
+  height: 10%;
+  display: flex;
+ 
+  justify-content: space-evenly;
 }
 
+.topBar{width: 100%;}
+.bottomBar{width: 100%;}
 .noConversationText {
   position: absolute;
   top: 10%;
@@ -297,8 +391,10 @@
   color: rgb(224, 220, 220);
   cursor: default;
 }
-
-.topbarLeft ul {
+.topbarImg{
+  text-align: center;
+}
+.topbarImg ul {
   background: #ffffff;
   width: 250px;
   padding: 0;
@@ -307,7 +403,7 @@
   box-shadow: 2px 2px 2px 2px rgb(186, 186, 186);
   border-radius: 10px;
 }
-.topbarLeft li {
+.topbarImg li {
   width: auto;
   height: 40px;
   line-height: 40px;
@@ -317,7 +413,7 @@
   
 }
 
-.topbarLeft a {
+.topbarImg a {
   text-decoration: none;
   color: #0C0A0A;
   
@@ -325,34 +421,35 @@
   
   
 }
-.topbarLeft a:hover {
+.topbarImg a:hover {
   
   color: blue;
   
 }
-.topbarLeft li:hover{
+.topbarImg li:hover{
   background-color: rgb(245, 243, 243);
 }
-.topbarLeft ul li {
+.topbarImg ul li {
   position: relative;
  }
 .sub-menu {
   display: none;
   position: absolute;
 }
-.topbarLeft .sub-menu{
+.topbarImg .sub-menu{
   position: absolute;
   left: 54px;
   top: 20px;
   display: none;
 }
-.topbarLeft li {
+.topbarImg li {
   position: relative;
 }
-.topbarLeft:hover .sub-menu {
+.topbarImg:hover .sub-menu {
   display: flex;
   flex-direction: column;
 }
+
 .sub-menu li {
   margin-left: 0 !important;
 }
@@ -361,23 +458,15 @@
 .sub-menu > ul {
   display: none !important;
 }
+.myModal{
 
-@media screen and (max-width: 768px) {
-  .chatMenu {
-    
-    flex: 1;
-  }
+  position: relative;
+  display: none ;
 
-  .chatMenuInput {
-    display: none;
-  }
-
-  .chatBox{
-    
-    flex: 10;
-  }
-
-  .chatOnline{
-    flex: 1px;
-  }
 }
+.divimg:hover .myModal{
+  display: none ;
+  
+  
+}
+

@@ -6,11 +6,16 @@
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  background-image: url("https://img.freepik.com/free-vector/blue-copy-space-digital-background_23-2148821698.jpg?w=1060&t=st=1666767222~exp=1666767822~hmac=dc4fe03e838e93d13d6fa5f13aa62d816a3eabc01cfdada278e93ee8c6c14b73");
+  background-image: url("../icon/background-cong-nghe-dep.jpg");
   background-repeat: no-repeat;
   background-position: center;
   
   background-size: cover;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Times New Roman', Times, serif;
 }
 .brand {
     display: flex;

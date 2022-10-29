@@ -3,7 +3,7 @@ import "./login.css";
 
 import { useNavigate, Link } from "react-router-dom";
 import Logo from "../../assets/logo.png";
-
+import Background from"../icon/cover-image.png"
 
 
 

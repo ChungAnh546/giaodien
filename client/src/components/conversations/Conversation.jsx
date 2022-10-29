@@ -17,8 +17,10 @@ export default function Conversation() {
         alt=""
       />
       <div className="mess">
+        <span className="spaceCon"></span>
         <span className="conversationName">Chung</span>
         <span className="converMess">Chung:hi</span>
+        <span className="spaceCon"></span>
       </div>
       
     </div>

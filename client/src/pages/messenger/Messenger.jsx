@@ -1,6 +1,5 @@
 import "./messenger.css";
 import { Link } from "react-router-dom";
-
 import Conversation from "../../components/conversations/Conversation";
 import Conversationtb from "../../components/conversations/conversationtopbar";
 import Message from "../../components/message/Message";
@@ -17,6 +16,7 @@ import { Search } from "@material-ui/icons";
 
 
 
+
 export default function Messenger() {
  
 
@@ -25,31 +25,27 @@ export default function Messenger() {
       
       <div className="messenger">
       <div className="chatOnline">
-          <div className="chatOnlineWrapper">
-          <div className="topbarLeft">
-          <Link >
-          <img
-            src={
-              "https://luv.vn/wp-content/uploads/2021/12/hinh-anh-gai-mat-vuong-xinh-dep-42.jpg"
-            }
-            alt=""
-            className="topbarImg"
-          />
-          </Link>
-          <ul class="sub-menu">
-           
-           <li><a href="#">your profile</a></li>
-           <li><a href="#">Setting</a></li>
-           <li><a href="#">log out</a>
-           </li>
-          </ul>
-        
+          
+          <div className="topBar">
+              <div className="divProfile">
+              
+              <img
+                src={
+                  "https://luv.vn/wp-content/uploads/2021/12/hinh-anh-gai-mat-vuong-xinh-dep-42.jpg"
+                }
+                
+                className="barImg"
+              />
+             
+              </div>
+            
+              
+                <div className="divimg"><img src="https://cdn-icons-png.flaticon.com/512/919/919904.png" alt="" className="iconleftmenu"/></div>
+                <div className="divimg"><img src="https://img.icons8.com/ios/452/call-list.png" alt="" className="iconleftmenu"/></div>
+                <div className="divimg"><img src="https://img.icons8.com/ios/452/today.png" alt="" className="iconleftmenu"/></div>
+                <div className="divimg"><img src="https://img.icons8.com/ios/452/video-call.png" alt="" className="iconleftmenu"/></div>
           </div>
-            <div className="divimg"><img src="https://cdn-icons-png.flaticon.com/512/919/919904.png" alt="" className="iconleftmenu"/></div>
-            <div className="divimg"><img src="https://img.icons8.com/ios/452/call-list.png" alt="" className="iconleftmenu"/></div>
-            <div className="divimg"><img src="https://img.icons8.com/ios/452/today.png" alt="" className="iconleftmenu"/></div>
-            <div className="divimg"><img src="https://img.icons8.com/ios/452/video-call.png" alt="" className="iconleftmenu"/></div>
-            <div className="spacemenuleft"></div>
+          <div className="bottomBar">
             <div className="divimg"><img src="https://img.icons8.com/ios/452/business.png" alt="" className="iconleftmenu"/></div>
             <div className="divimg2"><img src="https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/452/external-setting-essential-element-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png" alt="" className="iconleftmenu"/>
             <ul class="sub-menu">
@@ -59,52 +55,55 @@ export default function Messenger() {
             <li><a href="#">log out</a>
             </li>
             </ul>
-            </div>
             
+          </div>
           </div>
         </div>
         
         <div className="chatMenu">
         <div className="chatMenuWrapper2">
-        <div className="searchbar2">
-          <Search className="searchIcon" />
-          <input
-            placeholder="Search for friend, post or video"
-            className="chatMenuInput"
-          />
-        </div>
-        <div className="topbarIconItem">
-            <img src="https://cdn-icons-png.flaticon.com/512/748/748137.png" className="iconuser" />
+          <div className="topMenu">
+            <div className="searchbar2">
+              <Search className="searchIcon" />
+              <input
+                placeholder="Search for friend"
+                className="chatMenuInput"
+              />
+            </div>
             
-          </div>
-          <div className="topbarIconItem">
-            <img src="https://cdn-icons-png.flaticon.com/512/1387/1387940.png" className="icongroup" />
+                <img src="https://cdn-icons-png.flaticon.com/512/748/748137.png" className="iconuser" />
+                <img src="https://cdn-icons-png.flaticon.com/512/1387/1387940.png" className="icongroup" />
             
           </div>
         </div>
-        <div className="menuNhom"><p className="nhom">All</p><p className="nhom">Group</p></div>
+        <div className="menuNhom">
+                <div className="all"><a >All</a></div>
+                <div className="nhom"><a >Group</a></div>
+              
+              
+        </div>
           <div className="chatMenuWrapper">
          
            
-            
-              <div className="conversation" >
-                <Conversation  />
-                
-                
-                
-              </div>
-              <div className="conversation" >
-                <Conversation  />
-                
-                
-                
-              </div>
-              <div className="conversation" >
-                <Conversation  />
-                
-                
-                
-              </div>
+          <Conversation  />
+          <Conversation  />
+          <Conversation  />
+          <Conversation  />
+          <Conversation  />
+          <Conversation  />
+          <Conversation  />
+          <Conversation  />
+          <Conversation  />
+          <Conversation  />
+          
+          <Conversation  />
+          <Conversation  />
+          <Conversation  />
+          <Conversation  />
+          <Conversation  />
+          <Conversation  />
+
+             
               
             
             
@@ -112,20 +111,18 @@ export default function Messenger() {
         </div>
         <div className="chatBox">
           <div className="topbarchat">
-              <div className="conversation" >
-                <Conversationtb  />
-                
-                
-                
-              </div>
-              <div className="topbarIconItem">
+              
+              <Conversationtb  />
+            <div className="topbarright">
+              <span className="spaceTopBar"></span>
+              <span className="spaceTopBar"></span>
+              <span className="spaceTopBar"></span>
               <img src="https://cdn-icons-png.flaticon.com/512/1387/1387940.png" className="icongroup" />
-            
-              </div>
-              <div className="topbarIconItem">
+
               <img src="https://img.icons8.com/material-outlined/344/video-call.png" className="iconcall" />
-            
-              </div>
+              <span className="spaceTopBar"></span>
+            </div>
+             
           </div>
           <div className="chatBoxWrapper">
                 
@@ -133,32 +130,46 @@ export default function Messenger() {
                   
                     <div >
                       <Message  />
+                      <Messageown  /> 
+                      <Messageown  />
+                      <Messageown  />
+                      <Messageown  />
+                      <Messageown  />
+                      <Messageown  />
+                      <Messageown  />
+                      <Messageown  />
+                      <Messageown  />
                       <Messageown  />
                     </div>
                  
                 </div>
                 <div className="chatBoxBottom">
+                  <div className="topBarBox">
+                  
+                  <img src="https://img.icons8.com/laces/344/image-file.png" className="iconsmile" />
+                  <img src="https://img.icons8.com/laces/344/archive.png" className="iconsmile" />
+                  
+                  <img src="https://img.icons8.com/ios/344/call-list.png" className="iconsmile" />
+                  <img src="https://img.icons8.com/ios/344/more.png" className="iconsmile" />
+                  
+                  </div>
                   <div className="inputmess">
-                  <div className="topbarIconItem">
+                  <input className="chatMessageInput"
+                    placeholder="write something..."></input>
                   <img src="https://img.icons8.com/ios/344/smiling.png" className="iconsmile" />
             
-                  </div>
-                    <textarea
-                    className="chatMessageInput"
-                    placeholder="write something..."
+                  
                     
-                    
-                  ></textarea>
+                  
                   </div>
                   
-                  <button className="chatSubmitButton" >
-                    Send
-                  </button>
+                
                 </div>
               
            
           </div>
         </div>
+        
         
       </div>
     </>
